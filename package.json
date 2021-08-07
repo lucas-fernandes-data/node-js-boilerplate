@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node -r dotenv/config dist/index.js dotenv_config_path=.env.production",
     "build": "babel src --out-dir dist --no-copy-ignored --extensions .ts",
     "dev": "nodemon",
     "test": "jest"
@@ -39,5 +39,7 @@
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }
