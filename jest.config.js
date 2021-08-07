@@ -13,4 +13,8 @@ module.exports = {
 
   // A preset that is used as a base for Jest's configuration
   preset: 'ts-jest',
+
+  setupFiles: [
+    'dotenv/config'
+]
 };
