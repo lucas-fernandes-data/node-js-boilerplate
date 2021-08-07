@@ -1,20 +1,20 @@
 {
     "env": {
-        "es2020": true,
-        "node": true,
-        "jest": true
+        "es2021": true,
+        "node": true
     },
     "extends": [
-        "standard"
+        "standard", "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 11,
+        "ecmaVersion": 12,
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint", "prettier"
     ],
     "rules": {
+      "prettier/prettier": "error"
     }
 }
